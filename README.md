@@ -1,4 +1,4 @@
-# FCC project
+# FCC project (WIP)
 
 ## A clone based on [todoist](https://todoist.com)
 
