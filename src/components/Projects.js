@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSelectedProjectValue, useProjectsValue } from "../context";
 
-export const Projects = ({ activeNull = true }) => {
+export const Projects = ({ activeValue = null }) => {
   const [active, setActive] = useState(activeValue);
   const { setSelectedProject } = useSelectedProjectValue();
   const { projects } = useProjectsValue();
@@ -19,7 +19,8 @@ export const Projects = ({ activeNull = true }) => {
             : "sidebar__project"
         }
         onKeyDown={() => {
-          
+          setActive(project.projectId);
+          setSelectedProject(project.projectId);
         }}
         onClick={() => {
           setActive(project.projectId);
