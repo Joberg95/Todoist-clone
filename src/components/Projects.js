@@ -27,7 +27,6 @@ export const Projects = ({ activeValue = null }) => {
           setSelectedProject(project.projectId);
         }}
       >
-        I am a project
       </li>
     ))
   );
