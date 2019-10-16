@@ -5,13 +5,15 @@ import { Tasks } from "./components/Tasks";
 import { SelectedProjectProvider, ProjectsProvider } from "./context";
 
 export const App = () => {
-  <SelectedProjectProvider>
-    <ProjectsProvider>
-      <div className="App">
-        <Header />
-        <Content />
-        <Tasks />
-      </div>
-    </ProjectsProvider>
-  </SelectedProjectProvider>;
+  return (
+    <SelectedProjectProvider>
+      <ProjectsProvider>
+        <div className="App">
+          <Header />
+          <Content />
+          <Tasks />
+        </div>
+      </ProjectsProvider>
+    </SelectedProjectProvider>
+  );
 };
