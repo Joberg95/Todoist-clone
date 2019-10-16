@@ -6,7 +6,6 @@ import {
   FaRegCalendar
 } from "react-icons/fa";
 import { useSelectedProjectValue } from "../../context";
-import TestRunner from "jest-runner";
 
 export const Sidebar = () => {
   const { setSelectedProject } = useSelectedProjectValue;
