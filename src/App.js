@@ -2,10 +2,10 @@ import React from "react";
 import { Header } from "./components/layout/Header";
 import { Content } from "./components/layout/Content";
 import { Tasks } from "./components/Tasks";
-import { SelectedProjectsProvider, ProjectsProvider } from "./context";
+import { SelectedProjectProvider, ProjectsProvider } from "./context";
 
 export const App = () => {
-  <SelectedProjectsProvider>
+  <SelectedProjectProvider>
     <ProjectsProvider>
       <div className="App">
         <Header />
@@ -13,5 +13,5 @@ export const App = () => {
         <Tasks />
       </div>
     </ProjectsProvider>
-  </SelectedProjectsProvider>;
+  </SelectedProjectProvider>;
 };
